@@ -1,0 +1,534 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =========================== */
+/* ✅ Glass Effect Containers  */
+/* =========================== */
+.glass-container {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: transform 0.3s ease-in-out;
+}
+
+.glass-container:hover {
+  transform: scale(1.02);
+}
+
+/* =========================== */
+/* ✅ Button Styles (Refined)  */
+/* =========================== */
+.btn {
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  border: none;
+}
+
+.btn1 {
+  padding: 6px 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  min-width: 90px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  border: none;
+}
+
+
+
+/* ✅ Darker Green Button */
+.btn-green {
+  background: linear-gradient(180deg, #1e7e34 0%, #34d058 100%);
+  border: 1px solid #1a6e2f;
+  box-shadow: 0 4px 10px rgba(34, 163, 58, 0.6);
+  color: #ffffff;
+}
+
+.btn-green:hover {
+  background: linear-gradient(45deg, #218838, #1a6e2f);
+  transform: scale(1.07);
+}
+
+/* ✅ Blue Button */
+.btn-blue {
+  background: linear-gradient(180deg, #0071dc 0%, #23adf1 100%);
+  border: 1px solid #007ce3;
+  box-shadow: 0 4px 10px rgba(0, 125, 227, 0.6);
+  color: #ffffff;
+}
+
+.btn-blue:hover {
+  background: linear-gradient(45deg, #2a4dd0, #0071dc);
+  transform: scale(1.07);
+}
+
+
+/* ✅ Light Blue Button */
+.btn-light-blue {
+  background: linear-gradient(180deg, #4f9aff 0%, #69b9f2 100%);
+  border: 1px solid #3a8fd5;
+  box-shadow: 0 4px 10px rgba(58, 143, 213, 0.6);
+  color: #ffffff;
+}
+
+.btn-light-blue:hover {
+  background: linear-gradient(45deg, #3a8fd5, #3481c1);
+  transform: scale(1.07);
+}
+
+/* ✅ Red Button */
+.btn-red {
+  background: linear-gradient(180deg, #c62828 0%, #f44336 100%);
+  border: 1px solid #b71c1c;
+  box-shadow: 0 4px 10px rgba(211, 47, 47, 0.6);
+  color: #ffffff;
+}
+
+.btn-red:hover {
+  background: linear-gradient(45deg, #b71c1c, #d32f2f);
+  transform: scale(1.07);
+}
+
+/* =========================== */
+/* ✅ Card Hover Effect        */
+/* =========================== */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #1e293b !important; /* Dark Blue */
+  color: white;
+  backdrop-filter: blur(12px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* ✅ Ensure Text is White */
+.card h2, .card h3, .card p, .card select, .card input {
+  color: white !important;
+}
+
+/* ✅ Keep Buttons Visible */
+.btn {
+  color: white !important;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* =========================== */
+/* ✅ Centered Content        */
+/* =========================== */
+.centered-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* =========================== */
+/* ✅ Body & Theme Settings   */
+/* =========================== */
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #0f172a; /* Dark theme */
+  color: white;
+  transition: background 0.3s ease-in-out;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #38bdf8; /* Cyan accent */
+}
+
+/* Button Hover Effects */
+button {
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.07);
+}
+
+/* =========================== */
+/* ✅ Light & Dark Theme      */
+/* =========================== */
+:root {
+  --bg-color: #1e1e2f;
+  --text-color: #ffffff;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Light Mode */
+.light nav {
+  background: #ffffff;
+  color: #1e293b !important; /* Dark Blue Text */
+}
+
+.light nav a {
+  color: #1e293b !important;
+}
+
+.light nav a:hover {
+  color: #0071dc !important; /* Bright Blue */
+}
+
+/* Dark Mode */
+.dark nav {
+  background: #0f172a !important; /* Dark Blue */
+  color: white !important;
+}
+
+.dark nav a {
+  color: white !important;
+}
+
+.dark nav a:hover {
+  color: #38bdf8 !important; /* Cyan */
+}
+
+/* =========================== */
+/* ✅ Responsive Design       */
+/* =========================== */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .glass-container {
+    padding: 15px;
+  }
+
+  .card {
+    padding: 14px;
+  }
+}
+
+/* ✅ Improve Visibility of Input & Select Boxes */
+input, select {
+  background-color: #1e293b !important; /* Dark Blue */
+  border: 2px solid #4a90e2 !important; /* Bright Blue Border */
+  color: white !important;
+  padding: 12px !important;
+  border-radius: 6px !important;
+  font-size: 16px !important;
+  outline: none !important;
+  width: 100% !important;
+  transition: all 0.3s ease-in-out !important;
+}
+
+/* ✅ Improve Placeholder Visibility */
+input::placeholder, select {
+  color: #b0bec5 !important; /* Light Grey */
+  font-weight: 500 !important;
+}
+
+/* ✅ Focus Effect - Add Glow */
+input:focus, select:focus {
+  border-color: #66c2ff !important; /* Bright Blue on Focus */
+  box-shadow: 0 0 8px rgba(102, 194, 255, 0.6) !important;
+}
+
+.undo-card {
+  width: 100%;
+  max-width: 1200px;
+  padding: 1.5rem;
+  background:  #0f172a;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(15, 86, 99, 0.3);
+  margin: auto;
+}
+
+.undo-transaction-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: inset 0 0 10px rgba(255, 0, 0, 0.3);
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.undo-title {
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+
+.undo-select {
+  padding: 10px;
+  background: #1e293b;
+  color: white;
+  border-radius: 6px;
+  width: 100%;
+  border: 2px solid #4a90e2;
+}
+
+.undo-btn {
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  background: linear-gradient(45deg, #ff3860, #ff1744);
+  color: white;
+  border: none;
+}
+
+.undo-btn-disabled {
+  background: gray;
+  cursor: not-allowed;
+}
+
+/* ✅ Dashboard Container */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+  padding-top: 80px; /* ✅ Adjusted to avoid overlap with navbar */
+}
+
+/* ✅ Glass-Effect Dashboard Card */
+.dashboard-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(14px);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: centered;
+  max-width: 600px;
+  width: 90%;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.dashboard-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* ✅ Title & Subtitle */
+.dashboard-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #38bdf8; /* Cyan Accent */
+  text-shadow: 0 2px 10px rgba(56, 189, 248, 0.5);
+}
+
+.dashboard-subtitle {
+  font-size: 16px;
+  color: #b0bec5;
+}
+
+/* ✅ Animated Message */
+.dashboard-message {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 12px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+  box-shadow: 0 0 12px rgba(255, 255, 0, 0.5);
+}
+
+/* ✅ Current Round Box */
+.dashboard-round {
+  background: linear-gradient(135deg, #1e1e2f, #2a2a5a);
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: inset 0 0 12px rgba(255, 255, 255, 0.1);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.dashboard-round h3 {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+}
+
+.round-status {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.round-status.active {
+  color: #00ff6a;
+  text-shadow: 0 0 8px rgba(0, 255, 106, 0.5);
+}
+
+.round-status.ended {
+  color: #ff4c4c;
+  text-shadow: 0 0 8px rgba(255, 76, 76, 0.5);
+}
+
+/* ✅ Buttons Section */
+.dashboard-buttons {
+  display: flex;
+  justify-content: left;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+/* ✅ Extra Section (Undo + Transaction History) */
+.extra-section {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ✅ Responsive Fixes */
+@media (max-width: 768px) {
+  .dashboard-card {
+    padding: 20px;
+    max-width: 95%;
+  }
+
+  .dashboard-title {
+    font-size: 24px;
+  }
+
+  .dashboard-round h3 {
+    font-size: 20px;
+  }
+
+  .round-status {
+    font-size: 16px;
+  }
+}
+
+.transactions-card {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto; /* Matches Dashboard card size */
+  background: #0f172a; /* Dark Blue */
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 20px;
+}
+
+.transactions-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.transactions-loading, 
+.transactions-no-data {
+  color: lightgray;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.transactions-table-wrapper {
+  overflow-x: auto;
+}
+
+.transactions-table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+.transactions-table th,
+.transactions-table td {
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.transactions-table th {
+  background: #0071dc;
+  color: white;
+  font-weight: bold;
+}
+
+.transactions-table tr:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transition: 0.3s ease;
+}
+
+/* ✅ Admin Panel Styling */
+.admin-container {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* ✅ Dropdowns */
+.dropdown {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #374151;
+  color: white;
+}
+
+.admin-title {
+  font-size: 2.5rem;
+  color: cyan;
+  text-align: center;
+  font-weight: bold;
+}
+
+.admin-card {
+  background: #1f2937;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.admin-subtitle {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+
+

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic Metadata -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stock Trading Game | Real-Time Market Simulation</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Trade stocks in real-time, manage teams, and compete in a live stock market game. Experience a sleek and interactive trading platform.">
+  <meta name="keywords" content="stock trading, real-time trading, finance game, stock simulation">
+  <meta name="author" content="Stock Trading Team">
+  
+  <!-- Open Graph / Social Media Meta -->
+  <meta property="og:title" content="Stock Trading Game | Real-Time Market Simulation">
+  <meta property="og:description" content="Trade stocks in real-time, manage teams, and compete in a live stock market game.">
+  <meta property="og:image" content="/images/preview.jpg">
+  <meta property="og:url" content="https://your-website.com">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/favicon.ico">
+
+  <!-- Google Fonts (Sleek & Modern Look) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Custom Styling -->
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #121212;
+      color: white;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    /* Loading Animation */
+    .preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #121212;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      font-weight: bold;
+      color: #4CAF50;
+      animation: fadeOut 1s ease-in-out 3s forwards;
+    }
+
+    @keyframes fadeOut {
+      to {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div class="preloader">Loading Stock Market...</div>
+
+  <!-- React Root -->
+  <div id="root"></div>
+
+  <!-- Main React Script -->
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>

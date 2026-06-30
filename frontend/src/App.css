@@ -1,0 +1,83 @@
+/* ✅ Improved Root Styling */
+#root {
+  max-width: 1400px; /* Expanded for better large-screen support */
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ✅ Logo Styling */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  transition: transform 0.3s ease-in-out, filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 12px #646cffaa);
+  transform: scale(1.1);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 12px #61dafbaa);
+}
+
+/* ✅ Improved Logo Animation */
+@keyframes logo-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ✅ Apply Animation for React Logo */
+@media (prefers-reduced-motion: no-preference) {
+  .logo.react {
+    animation: logo-spin infinite 15s linear;
+  }
+}
+
+/* ✅ Enhanced Card Styling */
+.card {
+  padding: 2rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* ✅ Improve Readability of "Read the Docs" Section */
+.read-the-docs {
+  color: #bbb;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+/* ✅ Responsive Improvements */
+@media (max-width: 768px) {
+  #root {
+    padding: 1rem;
+  }
+
+  .logo {
+    height: 5em;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+}
